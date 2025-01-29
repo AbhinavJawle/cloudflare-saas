@@ -31,5 +31,8 @@
     "typescript": "^5",
     "vercel": "^39.3.0",
     "wrangler": "^3.106.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
   }
 }
