@@ -16,7 +16,7 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { BrandLogo } from "@/components/ui/BrandLogo";
 import { randomUUID } from "crypto";
-
+export const runtime = "edge";
 export default function Home() {
   return (
     <>
