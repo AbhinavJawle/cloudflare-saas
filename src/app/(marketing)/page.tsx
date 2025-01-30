@@ -15,6 +15,7 @@ import { ReactNode } from "react";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { BrandLogo } from "@/components/ui/BrandLogo";
+import { randomUUID } from "crypto";
 
 export default function Home() {
   return (
@@ -188,7 +189,7 @@ function FooterLinkGroup({
       <h3 className="font-semibold">{title}</h3>
       <ul className="flex flex-col gap-2 text-sm">
         {links.map((link) => (
-          <li key={link.href}>
+          <li key={randomUUID()}>
             <Link href={link.href}>{link.label}</Link>
           </li>
         ))}
